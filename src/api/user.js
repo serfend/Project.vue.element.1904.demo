@@ -2,17 +2,22 @@ import request from '@/utils/request'
 
 export function login(data) {
   return request({
-    url: '/user/login',
+    url: '/Account/login/rest',
     method: 'post',
     data
   })
 }
-
-export function getInfo(token) {
+export function register(data) {
   return request({
-    url: '/user/info',
-    method: 'get',
-    params: { token }
+    url: '/Account/register/rest',
+    method: 'post',
+    data
+  })
+}
+export function getInfo() {
+  return request({
+    url: '/Account/GetInfo',
+    method: 'get'
   })
 }
 

@@ -65,6 +65,9 @@ export default {
     i18n: '国际化',
     externalLink: '外链'
   },
+  lang: {
+    switchsuccess: '切换语言成功'
+  },
   navbar: {
     logOut: '退出登录',
     dashboard: '首页',
@@ -73,13 +76,41 @@ export default {
     size: '布局大小'
   },
   login: {
+    validate: {
+      username: {
+        invalid: '无效的用户名'
+      },
+      psw: {
+        len: '密码长度不可小于6'
+      }
+    },
+    success: '登录成功',
     title: '系统登录',
     logIn: '登录',
+    register: '注册',
     username: '账号',
     password: '密码',
     any: '随便填',
     thirdparty: '第三方登录',
-    thirdpartyTips: '本地不能模拟，请结合自己业务进行模拟！！！'
+    thirdpartyTips: '无法连接到服务器，当前可能为内网环境，此方式将不可用'
+  },
+  register: {
+    validate: {
+      psw: {
+        inconform: '两次输入的密码不一致',
+        confirmRequired: '请再次输入密码'
+      },
+      email: {
+        notmatch: '邮箱格式有误'
+      }
+    },
+    title: '注册账号',
+    confirmPassword: '确认密码',
+    company: '所在单位',
+    submit: '提交注册',
+    checkemail: '邮箱认证',
+    emailstatus: '邮箱认证状态',
+    success: '注册成功'
   },
   documentation: {
     documentation: '文档',

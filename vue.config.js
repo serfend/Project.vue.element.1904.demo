@@ -18,7 +18,7 @@ module.exports = {
    * In most cases please use '/' !!!
    * Detail: https://cli.vuejs.org/config/#publicpath
    */
-  publicPath: '/bar/',
+  publicPath: '/vue-admin/',
   outputDir: 'dist',
   assetsDir: 'static',
   lintOnSave: process.env.NODE_ENV === 'development' ? 'error' : false,
@@ -51,11 +51,6 @@ module.exports = {
       app.use(bodyParser.urlencoded({
         extended: true
       }))
-
-      const { default: mocks } = require('./mock')
-      for (const mock of mocks) {
-        app[mock.type](mock.url, mock.response)
-      }
     }
   },
   configureWebpack: {

@@ -7,3 +7,19 @@ export function getdic(path) {
     params: { path }
   })
 }
+
+export function create(data) {
+  return request({
+    url: '/company/create',
+    method: 'post',
+    data
+  })
+}
+
+export function authorize(data) {
+  return request({
+    url: '/company/authorize',
+    method: 'post',
+    data
+  })
+}

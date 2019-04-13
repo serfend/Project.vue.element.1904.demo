@@ -65,6 +65,9 @@ export default {
     i18n: 'I18n',
     externalLink: 'External Link'
   },
+  lang: {
+    switchsuccess: 'switch language success'
+  },
   navbar: {
     logOut: 'Log Out',
     dashboard: 'Dashboard',
@@ -74,12 +77,20 @@ export default {
   },
   login: {
     title: 'Login Form',
-    logIn: 'Log in',
+    logIn: 'Sign in',
+    register: 'Sign up',
     username: 'Username',
     password: 'Password',
     any: 'any',
     thirdparty: 'Or connect with',
     thirdpartyTips: 'Can not be simulated on local, so please combine you own business simulation! ! !'
+  },
+  register: {
+    title: '注册账号',
+    company: '所在单位',
+    submit: '提交注册',
+    checkemail: '邮箱认证',
+    emailstatus: '邮箱认证状态'
   },
   documentation: {
     documentation: 'Documentation',

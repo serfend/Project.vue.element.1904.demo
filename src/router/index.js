@@ -13,7 +13,7 @@ import tableRouter from './modules/table'
 import nestedRouter from './modules/nested'
 
 /** note: sub-menu only appear when children.length>=1
- *  detail see  https://panjiachen.github.io/vue-element-admin-site/guide/essentials/router-and-nav.html
+ *  detail see  https://Serfend.github.io/vue-element-admin-site/guide/essentials/router-and-nav.html
  **/
 
 /**
@@ -53,6 +53,11 @@ export const constantRoutes = [
   {
     path: '/login',
     component: () => import('@/views/login/index'),
+    hidden: true
+  },
+  {
+    path: '/register',
+    component: () => import('@/views/register/index'),
     hidden: true
   },
   {
@@ -377,7 +382,7 @@ export const asyncRoutes = [
     component: Layout,
     children: [
       {
-        path: 'https://github.com/PanJiaChen/vue-element-admin',
+        path: 'https://github.com/Serfend/vue-element-admin',
         meta: { title: 'externalLink', icon: 'link' }
       }
     ]
